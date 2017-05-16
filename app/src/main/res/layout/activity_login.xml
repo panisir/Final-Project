@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.asus.finalproject.LoginActivity">
+
+    <LinearLayout
+        android:paddingTop="16dp"
+        android:background="@drawable/side_nav_bar"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:paddingTop="24dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Şimdi Kayıt Ol !"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/login_tvRegister" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2">
+
+
+    </LinearLayout>
+
+    <Button
+        android:textColor="#FFFFFF"
+        android:background="@drawable/side_nav_bar"
+        android:text="Oturum Aç"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_btnLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:paddingTop="16dp"
+        android:layout_gravity="center"
+        android:text="Parolanızı mı Unuttunuz ?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_tvCredentials"
+        android:layout_above="@+id/login_btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        
+        <LinearLayout
+           android:background="@drawable/ovaledittext"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:paddingLeft="8dp"
+                app:srcCompat="@drawable/ic_email_black_36px"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:hint="Email Adresiniz ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/noborderedittext"
+                android:ems="10"
+                android:padding="8dp"
+                android:id="@+id/login_etEmail"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true"
+                />
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/ovaledittext"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:paddingLeft="8dp"
+                app:srcCompat="@drawable/ic_lock_black_36px"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:layout_weight="1"
+                android:hint="Şifreniz ..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/noborderedittext"
+                android:ems="10"
+                android:padding="8dp"
+                android:id="@+id/login_etPassword"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_centerHorizontal="true"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
